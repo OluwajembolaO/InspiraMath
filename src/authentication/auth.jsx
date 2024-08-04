@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./styles.css";
-import SignIn from "./signIn";
-import SignUp from "./signUp";
+//import "./style.css";
+import SignInForm from "./signIn";
+import SignUpForm from "./signUp";
 
 function Auth() {
   const [type, setType] = useState("signIn");
@@ -17,8 +17,8 @@ function Auth() {
     <div className="App">
       <h2>Sign in/up Form</h2>
       <div className={containerClass} id="container">
-        <SignUp/>
-        <SignIn/>
+        <SignUpForm />
+        <SignInForm />
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
